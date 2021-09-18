@@ -336,6 +336,13 @@ i{
   margin: 0.2em;
   border-radius: 0.8em;
 }
+.project-1, .project-2, .project-3, .project-4{
+  cursor: pointer;
+  transition: ease-in-out 0.4s;
+}
+.project-1:hover, .project-2:hover, .project-3:hover, .project-4:hover{
+  background-color: #007bff;
+}
 .blogs{
   display: flex;
   justify-content: space-evenly;
