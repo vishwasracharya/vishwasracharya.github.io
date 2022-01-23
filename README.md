@@ -8,6 +8,13 @@ My static portfolio website. 😉
 # Hi, I'm Vishwas Acharya! 👋
 
 I'm a about to complete my Bachelor's of I.T Engineering, and also as a side hustule make You-Tube videos, Podcast, Blogs and more...
+Here's the link to the website: https://vishwasracharya.github.io
+
+- Why I made this website?
+> I just wanted to make a simple static website for my online presence, you know <strong><em>"If you're a software engineer and if you don't have your website then you're not a software engineer"</em></strong>, that's what I believe. Hence then I desided to make one. 
+
+# Tech Stack Used
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
 
 ### Connect with me
   <a href="https://twitter.com/vishwasracharya">
