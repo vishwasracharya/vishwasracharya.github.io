@@ -1,5 +1,5 @@
 # vishwasracharya.github.io
-My static portfolio website. 😉
+My static portfolio website, Which has basic information of mine like skills, experience, blogs, podcast and all.  😉
 
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=vishwasrachary.visitor-badge)
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vishwasracharya/vishwasracharya.github.io?color=red">
