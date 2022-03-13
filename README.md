@@ -11,7 +11,7 @@ I'm a about to complete my Bachelor's of I.T Engineering, and also as a side hus
 Here's the link to the website: https://vishwasracharya.github.io
 
 - Why I made this website?
-> I just wanted to make a simple static website for my online presence, you know <strong><em>"If you're a software engineer and if you don't have your website then you're not a software engineer"</em></strong>, that's what I believe. Hence then I desided to make one. 
+> I just wanted to make a simple static website for my online presence, you know <strong><em>"If you're a software engineer and if you don't have your website then you're not a software engineer"</em></strong>, that's what I believe. Hence then I decided to make one. 
 
 # Tech Stack Used
 <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" /> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
