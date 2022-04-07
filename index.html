@@ -400,6 +400,9 @@
                 <p class="display-subtitle font-poppins">Here's a link to my <a class="link"
                         href="https://drive.google.com/file/d/1mplIcYwS3x2ZLfvBVvS9RkSaABtV8iwL/view?usp=sharing"
                         target="_blank">Resume</a>, If you want to know more about my qualifications.</p>
+                <p class="display-subtitle font-poppins">Go to my New Website! 
+                    <a class="link" href="https://vishwasacharya.herokuapp.com" target="_blank">https://vishwasacharya.herokuapp.com</a>
+                </p>
                 <div class="text-left">
                     <div class="pt-5">
                         <ul class="social-links py-0">
@@ -435,6 +438,83 @@
         </section>
     </div>
 
+    <style>
+        #popupScreen{
+            display: none;
+        }
+        .popup{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.891);
+            z-index: 9999;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+        .popup-btn{
+            color: #fff;
+            margin: 10px;
+            padding: 7px;
+            background-color: #007bff;
+            width: fit-content;
+            border-radius: 10px;
+            transition: all 0.3s ease-in-out;
+        }
+        .popup-btn:hover{
+            background-color: #007bffc3;
+        }
+        .popup-div{
+            margin: 0 22em;
+        }
+        @media (max-width: 1300px) {
+            .popup-div{
+                margin: 0 5em;
+            }
+        }
+        @media (max-width: 768px) {
+            .popup-div{
+                margin: 0;
+            }
+        }
+        .close{
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 10px;
+            font-size: 20px;
+            color: white;
+            cursor: pointer;
+            text-decoration: underline;
+        }
+        .close:hover{
+            opacity: 0.8;
+        }
+    </style>
+
+    <div class="popup vertical-center" id="popupScreen">
+        <div class="close" id="closeBtn">No, I don't want to GO!</div>
+        <div class="popup-div">
+            <div class="m-0">
+                <h3 class=" font-poppins display-0">New Website Alert!</h3>
+                <p class="font-poppins">My New Website is now live now, where everything is available at one place. If you want to go there then click this button.</p>
+            </div>
+            <a class="font-poppins popup-btn" href="https://vishwasacharya.herokuapp.com" target="_blank" rel="noopener noreferrer">New Website 😉</a>
+        </div>
+    </div>
+
+    <script>
+        setTimeout( () => {
+            document.getElementById('popupScreen').style.display = 'flex';
+        }, 2000);
+        document.getElementById('closeBtn').onclick = function() {
+            document.getElementById('popupScreen').style.display = 'none';
+        }
+    </script>
 </body>
 
 </html>
