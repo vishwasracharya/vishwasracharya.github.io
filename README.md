@@ -7,7 +7,7 @@ My static portfolio website, Which has basic information of mine like skills, ex
 
 # Hi, I'm Vishwas Acharya! 👋
 
-I'm a about to complete my Bachelor's of I.T Engineering, and also as a side hustule make You-Tube videos, Podcast, Blogs and more...
+I'm a completeted my Bachelor's of I.T Engineering, and also as a side hustule make You-Tube videos, Podcast, Blogs and more...
 Here's the link to the website: https://vishwasracharya.github.io
 
 - Why I made this website?
