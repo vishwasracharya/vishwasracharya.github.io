@@ -23,7 +23,7 @@ Here's the link to the website: https://vishwasracharya.github.io
   <a href="https://www.linkedin.com/in/vishwasracharya">
     <img width="30px" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" />
   </a>&ensp;
-  <a href="https://www.vishwasracharya.gitgub.io">
+  <a href="https://vishwasracharya.herokuapp.com">
     <img width="30px" src="https://img.icons8.com/fluency/48/000000/domain.png" />
   </a>&ensp;
   <a href="https://www.instagram.com/vishwasracharya">
