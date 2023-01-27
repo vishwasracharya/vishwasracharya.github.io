@@ -1,5 +1,5 @@
 # vishwasracharya.github.io
-My static portfolio website, Which has basic information of mine like skills, experience, blogs, podcast and all.  😉
+My portfolio website made with static HTML, CSS, JS, Which has basic information of mine like skills, experience, blogs, podcast and all.  😉
 
 ![visitor badge](https://visitor-badge.glitch.me/badge?page_id=vishwasrachary.visitor-badge)
 <img alt="GitHub repo size" src="https://img.shields.io/github/repo-size/vishwasracharya/vishwasracharya.github.io?color=red">
@@ -23,7 +23,7 @@ Here's the link to the website: https://vishwasracharya.github.io
   <a href="https://www.linkedin.com/in/vishwasracharya">
     <img width="30px" src="https://www.vectorlogo.zone/logos/linkedin/linkedin-icon.svg" />
   </a>&ensp;
-  <a href="https://www.vishwasracharya.gitgub.io">
+  <a href="https://vishwasracharya.herokuapp.com">
     <img width="30px" src="https://img.icons8.com/fluency/48/000000/domain.png" />
   </a>&ensp;
   <a href="https://www.instagram.com/vishwasracharya">
@@ -43,4 +43,7 @@ Here's the link to the website: https://vishwasracharya.github.io
   </a>&ensp;
   <a href="https://facebook.com/vishwasracharya">
     <img width="30px" src="https://www.vectorlogo.zone/logos/facebook/facebook-icon.svg" />
+  </a>
+  <a href="https://stackoverflow.com/users/17306477/vishwas-acharya">
+  <img width="30px" src="https://www.vectorlogo.zone/logos/stackoverflow/stackoverflow-icon.svg" />
   </a>
