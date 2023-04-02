@@ -1,0 +1,55 @@
+<section class="bg-light bg-gradient">
+    <div class="container">
+        <div class="col-md-10 mx-auto">
+            <div class=" border-0 rounded my-3">
+                <div class="row">
+                    <div class="col-12 col-md-4 center px-3">
+                        <img loading="lazy" class="pod-hero-img img-fluid rounded shadow-lg"
+                            [src]="podDetails.pod_image" alt="Vishwas Acharya Podcast Cover">
+                    </div>
+                    <div class="col-12 col-md-8 text-center text-md-start">
+                        <div class="my-3 ">
+                            <h1 class="">{{podDetails.pod_name}}</h1>
+                            <p class="">{{podDetails.pod_desc}}</p>
+                            <span
+                                class="badge rounded-pill bg-blue bg-gradient text-white text-decoration-none">Available
+                                on {{podAvailaibility.length}} Platforms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="mb-3">Podcast Availaibility</h2>
+                <a *ngFor="let avail of podAvailaibility" [href]="avail.platform_link" target="_blank"
+                    rel="noopener noreferrer">
+                    <img class="m-1 org-icons" [src]="avail.platform_logo" [title]="avail.platform_name"
+                        alt="{{avail.platform_name}} Logo">
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <h2>List of Episodes</h2>
+        <div class="row">
+            <div class="col-md-12 mx-auto">
+                <ul>
+                    <li *ngFor="let episode of podEpisodes">
+                        <a class="link" routerLink="{{episode.slug}}" rel="noopener noreferrer">
+                            {{episode.episode_name}}
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
