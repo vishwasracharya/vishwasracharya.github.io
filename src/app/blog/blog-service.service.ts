@@ -10,27 +10,25 @@ export class BlogServiceService {
   API_BLOG_ID = environment.blogger_blog_id;
   API_KEY = environment.blogger_api_key;
 
-  constructor(
-    private http: HttpClient
-  ) {}
+  constructor(private http: HttpClient) {}
 
   getBlog() {
-    let url = `${this.API_BASE_URL}${this.API_BLOG_ID}?key=${this.API_KEY}`
+    let url = `${this.API_BASE_URL}${this.API_BLOG_ID}?key=${this.API_KEY}`;
     return this.http.get(url);
   }
 
   getPosts() {
-    let url = `${this.API_BASE_URL}${this.API_BLOG_ID}/posts?key=${this.API_KEY}`
+    let url = `${this.API_BASE_URL}${this.API_BLOG_ID}/posts?key=${this.API_KEY}`;
     return this.http.get(url);
   }
 
   getPostById(id: string) {
-    let url = `${this.API_BASE_URL}${this.API_BLOG_ID}/posts/${id}?key=${this.API_KEY}`
+    let url = `${this.API_BASE_URL}${this.API_BLOG_ID}/posts/${id}?key=${this.API_KEY}`;
     return this.http.get(url);
   }
 
   getPostByPageId(pageId: string) {
-    let url = `${this.API_BASE_URL}${this.API_BLOG_ID}/posts?key=${this.API_KEY}&pageToken=${pageId}`
+    let url = `${this.API_BASE_URL}${this.API_BLOG_ID}/posts?key=${this.API_KEY}&pageToken=${pageId}`;
     return this.http.get(url);
   }
 }

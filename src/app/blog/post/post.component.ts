@@ -24,6 +24,8 @@ export class PostComponent implements OnInit {
 
   recentPosts: any;
 
+  isBlogger: boolean = false;
+
   constructor(
     private route: ActivatedRoute,
     private blogService: BlogServiceService,
@@ -32,8 +34,15 @@ export class PostComponent implements OnInit {
   }
 
   ngOnInit(): void {
-    this.getPost();
-    this.getAllPosts();
+    if (isNaN(this.id)) {
+      console.log('hashnode slug');
+    } else {
+      this.isBlogger = true;
+      console.log('Blogger id');
+      this.getPost();
+      this.getAllPosts();
+    }
+
   }
 
   getPost() {
