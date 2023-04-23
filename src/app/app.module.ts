@@ -20,6 +20,7 @@ import { TermsComponent } from './legal/terms/terms.component';
 import { PrivacyComponent } from './legal/privacy/privacy.component';
 import { RouterModule } from '@angular/router';
 import { SafePipe } from './core/pipes/safeHtml.pipe';
+import { GraphQLModule } from './graphql.module';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { SafePipe } from './core/pipes/safeHtml.pipe';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule
+    RouterModule,
+    GraphQLModule
   ],
   providers: [],
   bootstrap: [AppComponent]
