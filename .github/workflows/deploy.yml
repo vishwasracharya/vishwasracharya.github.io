@@ -28,4 +28,4 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.2
         with:
           branch: main
-          folder: dist/<your-angular-app-folder>
+          folder: dist/ng-vishwasacharya
