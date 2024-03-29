@@ -26,8 +26,8 @@ export class BlogComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    this.getBlog();
-    this.getHNinitPosts(0);
+    // this.getBlog();
+    // this.getHNinitPosts(0);
   }
 
   getHNinitPosts(page: number): any {
