@@ -35,27 +35,23 @@ export class PostComponent implements OnInit {
 
   ngOnInit(): void {
     if (isNaN(this.id)) {
-      console.log('hashnode slug');
     } else {
-      this.isBlogger = true;
-      console.log('Blogger id');
       this.getPost();
       this.getAllPosts();
+      this.isBlogger = true;
     }
-
   }
 
   getPost() {
     this.isLoading = true;
     this.blogService.getPostById(this.id).subscribe((data: any) => {
-      console.log(data);
       this.post = data;
       this.content = this.sanitazeHtml(data.content ? data.content : '');
       this.labels = data.labels ? data.labels : [];
       this.publishedDate = data.published ? data.published : '';
       this.updatedDate = data.updated ? data.updated : '';
+      this.isLoading = false;
     });
-    this.isLoading = false;
   }
 
   getSlugofPost(postUrl: any) {

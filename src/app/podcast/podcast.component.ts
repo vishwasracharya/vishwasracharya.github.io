@@ -15,6 +15,5 @@ export class PodcastComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    console.log(this.podAvailaibility);
   }
 }

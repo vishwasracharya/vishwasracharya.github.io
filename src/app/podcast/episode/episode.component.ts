@@ -27,7 +27,6 @@ export class EpisodeComponent implements OnInit {
 
 
   ngOnInit(): void {
-    console.log("works");
     // filter the episodes array to find the episode with the id that matches the id in the url
     const episode = this.podEpisodes.filter(episode => episode.slug === this.slug)[0];
     this.episode = episode;

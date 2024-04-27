@@ -12,6 +12,7 @@ import { Apollo } from 'apollo-angular';
 export class BlogComponent implements OnInit, OnDestroy {
 
   posts: any;
+  mediumBlogs: any;
   nextPageToken: any;
   isLoading: boolean = false;
   loadMoreBtn: boolean = false;
@@ -26,8 +27,31 @@ export class BlogComponent implements OnInit, OnDestroy {
   ) {}
 
   ngOnInit(): void {
-    // this.getBlog();
+    this.getBlog();
+    this.getMediumBlogs();
     // this.getHNinitPosts(0);
+  }
+
+  getMediumBlogs(): any {
+    this.isLoading = true;
+    const mediumBlogPosts = this.blogService.getMediumBlogPosts().subscribe({
+      next: (response) => {
+        this.mediumBlogs = response.items.map((item: any) => {
+          const description = item.description;
+          const regex = /src="([^"]+)"/g;
+          const match = regex.exec(description);
+          const imageUrl = match ? match[1] : null; // Extracted image URL
+          return { ...item, image: imageUrl }; // Add image URL to the item
+        });
+
+        this.isLoading = false;
+      },
+      error: (error) => {
+        this.isLoading = false;
+        throw error;
+      }
+    });
+    this.unsubscribe.push(mediumBlogPosts);
   }
 
   getHNinitPosts(page: number): any {
@@ -37,7 +61,6 @@ export class BlogComponent implements OnInit, OnDestroy {
         page: page
       }
     }).valueChanges.subscribe((result: any) => {
-      // console.log("Hashnode posts: ", result.data.user.publication.posts);
       let data = result.data.user.publication.posts;
       if (data.length == 0) return;
       if (this.techBlog.length == 0) {
@@ -53,7 +76,6 @@ export class BlogComponent implements OnInit, OnDestroy {
   getBlog() {
     this.isLoading = true;
     let blogData = this.blogService.getPosts().subscribe((data: any) => {
-      // console.log(data);
       let postData = data.items;
       let page = data.nextPageToken;
 
@@ -68,7 +90,6 @@ export class BlogComponent implements OnInit, OnDestroy {
   }
 
   loadMore() {
-    // console.log('load more');
     this.loadMoreBtn = true;
 
     let blogPageData = this.blogService.getPostByPageId(this.nextPageToken).subscribe((data: any) => {

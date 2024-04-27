@@ -1,4 +1,4 @@
-<section class="bg-light">
+<!-- <section class="bg-light">
     <div class="container my-5">
         <div class="row">
             <div class="col-md-6 mx-auto text-center">
@@ -7,9 +7,9 @@
             </div>
         </div>
     </div>
-</section>
+</section> -->
 
-<!-- <section class="bg-light">
+<section class="bg-light">
     <div class="container my-5">
         <div class="row">
             <div class="col-md-10 mx-auto text-center">
@@ -25,25 +25,25 @@
     <div class="container mb-4">
         <h2 class="mb-4">Tech Blogs <i class="fa-solid fa-lightbulb mx-1"></i></h2>
         <div class="row">
-            <ng-container *ngFor="let post of techBlog">
+            <ng-container *ngFor="let post of mediumBlogs">
                 <div class="col-md-6 col-xl-4 mb-4 overflow hidden bounceIn">
                     <div class="border rounded overflow hidden shadow-sm blog-card">
-                        <a href="https://vishwasacharya.hashnode.dev/{{post.slug}}" target="_blank">
+                        <a href="{{post.link}}" target="_blank">
                             <div class="p-2">
                                 <img loading="lazy" class="img-fluid text-muted-hover rounded fadeIn"
-                                    src="{{ post.coverImage }}" [alt]="post.title ? post.title : ''">
+                                    src="{{ post.image }}" [alt]="post.title ? post.title : ''">
                                 <div class="mt-3">
                                     <h5 class="fw-bold ms-1">{{post.title ? post.title : ''}}</h5>
                                     <ul class="mb-2 p-0">
                                         <li class="badge bg-light rounded-pill font-xs m-0 text-muted text-dark"
-                                            *ngFor="let label of post.labels">{{label}}</li>
+                                            *ngFor="let label of post.categories">{{label}}</li>
                                     </ul>
                                     <div class="d-flex align-items-center justify-content-between mt-3 mx-2">
                                         <p class="my-auto text-muted font-xs">
                                             <i class="fa-solid fa-calendar-days text-muted me-2"></i>
-                                            {{post.dateAdded ? post.dateAdded.split("T")[0] : ''}}
+                                            {{post.pubDate}}
                                         </p>
-                                        <a class="font-xs link" href="https://vishwasacharya.hashnode.dev/{{post.slug}}" target="_blank">
+                                        <a class="font-xs link" href="{{post.link}}" target="_blank">
                                             Got To Blog
                                             <i class="fa-solid fa-angles-right link mx-1"></i>
                                         </a>
@@ -54,6 +54,13 @@
                     </div>
                 </div>
             </ng-container>
+        </div>
+        <div class="row">
+            <div class="col-md-10 mx-auto text-center">
+                <a class="btn btn-warning" href="https://medium.com/@vishwasacharya" target="_blank">
+                    View More on Medium
+                </a>
+            </div>
         </div>
     </div>
 
@@ -83,4 +90,4 @@
             </div>
         </div>
     </div>
-</section> -->
+</section>

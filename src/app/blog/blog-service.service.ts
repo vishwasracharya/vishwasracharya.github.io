@@ -1,6 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { environment } from 'src/environments/environment';
+import { Observable } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
@@ -30,5 +31,10 @@ export class BlogServiceService {
   getPostByPageId(pageId: string) {
     let url = `${this.API_BASE_URL}${this.API_BLOG_ID}/posts?key=${this.API_KEY}&pageToken=${pageId}`;
     return this.http.get(url);
+  }
+
+  getMediumBlogPosts(): Observable<any> {
+    const mediumUrl = "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@vishwasacharya"
+    return this.http.get(mediumUrl);
   }
 }

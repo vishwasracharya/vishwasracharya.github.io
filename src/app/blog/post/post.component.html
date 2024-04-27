@@ -1,5 +1,14 @@
+<section *ngIf="isLoading">
+    <div class="container">
+        <div class="text-center">
+            <div class="spinner-border" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+</section>
 
-<ng-component *ngIf="isBlogger == true">
+<ng-container *ngIf="!isLoading">
 <section class="bg-light">
     <div class="container">
         <div class="row">
@@ -15,7 +24,7 @@
                 <div class="d-flex align-items-center justify-content-center flex-wrap mx-2 mb-3">
                     <p class="my-auto text-muted font-xs mx-2">
                         <i class="fa-solid fa-calendar-days text-muted me-2"></i>
-                        <span class="fw-bold text-muted">Published:</span> {{post ? post.published : '' | date: 'mediumDate'}}}
+                        <span class="fw-bold text-muted">Published:</span> {{post ? post.published : '' | date: 'mediumDate'}}
                     </p>
                     <p class="my-auto text-muted font-xs mx-2">
                         <i class="fa-solid fa-calendar-days text-muted me-2"></i>
@@ -63,7 +72,7 @@
                     </div>
                 </div>
 
-                <!-- <div class="border rounded p-2 mb-3">
+                <div class="border rounded p-2 mb-3">
                     <h5 class="fw-bold ms-2">More Posts</h5>
                     <div class="overflow hidden mb-2" *ngFor="let post of recentPosts">
                         <a [routerLink]="'/blog' + '/' + post ? post.id : ''">
@@ -81,9 +90,9 @@
                         </div>
                         </a>
                     </div>
-                </div> -->
+                </div>
             </div>
         </div>
     </div>
 </section>
-</ng-component>
+</ng-container>
