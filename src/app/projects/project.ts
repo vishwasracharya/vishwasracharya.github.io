@@ -28,6 +28,27 @@ const projectData = [
     tags: ['HTML5', 'CSS3', 'JavaScript'],
   },
   {
+    name: 'Email Spam Checker',
+    desc: 'This is a tool which checks the spam words from the message of your email, Go on the Live Website to checkout by yourself.',
+    img: 'assets/img/projects/email-spam-checker.png',
+    link: 'https://vishwasracharya.github.io/email-spam-checker',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+  },
+  {
+    name: 'Command Line Tools',
+    desc: 'This repository contains all the command line tools that I have created when learning how to create this type of tools',
+    img: 'assets/img/projects/command-line-tools.png',
+    link: 'https://github.com/vishwasracharya/command_line_tools',
+    tags: ['Node.Js', 'JavaScript'],
+  },
+  {
+    name: 'Circle Animation',
+    desc: 'A Basic circle animation which was a task given to me in one of the interview.',
+    img: 'assets/img/projects/circle-animation.png',
+    link: 'https://vishwasracharya.github.io/Circle-Animation',
+    tags: ['HTML5', 'CSS3', 'JavaScript'],
+  },
+  {
     name: 'SalesBlink.io',
     desc: 'This is my very recent project that I worked during my internship @futureblink. This is a web application that helps the sales team to manage their sales process. It is a CRM system that helps the sales team to manage their sales process.',
     img: 'assets/img/projects/salesblink-io.png',
@@ -124,6 +145,20 @@ const projectData = [
     img: 'assets/img/projects/landing-page-react.png',
     link: 'https://vishwasracharya.github.io/landing-page-react/',
     tags: ['React.Js', 'Javascript', 'Git', 'GitHub'],
+  },
+  {
+    name: 'Phone Dialer',
+    desc: 'A basic website project which has a Phone Dialer, I made it during the learning process of HTML, CSS & JavaScript.',
+    img: 'assets/img/projects/phonedialer.png',
+    link: 'https://vishwasracharya.github.io/phonedialer',
+    tags: ['HTML', 'CSS', 'Javascript', 'Git', 'GitHub'],
+  },
+  {
+    name: 'General Projects',
+    desc: 'A mix of different projects. (Clock, loading animation, morph animation)',
+    img: 'assets/img/projects/general-projects.png',
+    link: 'https://github.com/vishwasracharya/General-Projects',
+    tags: ['HTML', 'CSS', 'Javascript', 'Git', 'GitHub'],
   },
 ];
 
